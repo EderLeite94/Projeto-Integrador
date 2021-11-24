@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Kodinger">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Entrar</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/login.css">
+    <style>body.my-login-page {background: white;}
+	           .my-login-page .card {
+	            box-shadow: 0 4px 8px rgba(0,0,0,.05);}</style>
+</head>
+
+<body class="my-login-page">
+	<section class="h-100">
+		<div class="container h-100">
+			<div class="row justify-content-md-center h-100">
+				<div class="card-wrapper">
+					<div class="brand">
+                        <img src="faveicon.png" alt="logo Roxo&Rosa">
+					</div>
+					<div class="card fat">
+						<div class="card-body">
+							<h4 class="card-title">Entrar</h4>
+							<form method="POST" class="my-login-validation" novalidate="">
+								<div class="form-group">
+									<label for="email">Email</label>
+									<input id="email" type="email" class="form-control" name="email" value="" required autofocus>
+									<div class="invalid-feedback">
+										Email é invalido 
+									</div>
+								</div>
+
+								<div class="form-group">
+									<label for="password">Senha
+										<a  href="recuperar.html" class="float-right criar">
+											esqueceu a senha?
+										</a>
+									</label>
+									<input id="password" type="password" class="form-control" name="password" required data-eye>
+								    <div class="invalid-feedback">
+								    	Senha é necessária
+							    	</div>
+								</div>
+
+								<div class="form-group">
+									<div class="custom-checkbox custom-control">
+										<input type="checkbox" name="remember" id="remember" class="custom-control-input">
+										<label for="remember" class="custom-control-label">Lembre de mim</label>
+									</div>
+								</div>
+
+								<div class="form-group m-0">
+									<button type="submit" class="btn btn-primary btn-block bo">
+										Entrar
+									</button>
+								</div>
+								<div class="mt-4 text-center">
+									não tem conta? <a class="criar" href="login.html">Criar Uma</a>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="footer">
+						Copyright &copy; 2021 &mdash; Roxo&Rosa 
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script src="js/login.js"></script>
+</body>
+</html>
